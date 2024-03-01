@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"> click to btn</h1>
+    <input type="text" id="inp">
+    <button id="btn" onclick="inpFunc()">click me </button>
+
+    <script>
+        function inpFunc(){
+            let inp = document.getElementById('inp')
+            document.getElementById('demo').innerHTML = 'wlc dear mr/miss : ' + inp.value
+
+
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para{
+            width: 200px;
+            height: 200px;
+            font-size: 50px;
+            background-color: blueviolet;
+        }
+        .txt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color : white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="demo" class="demo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt amet similique ab, est minus odit veritatis earum quasi autem corrupti nobis odio? Maxime temporibus omnis eum odit aperiam distinctio.
+    </div>
+
+
+    <script>
+        let x = document.getElementById("demo");
+        // x.setAttribute( "class", "para txt") ;
+
+
+        x.classList.add('txt' , 'para');
+        x.classList.remove('demo')
+    </script>
+</body>
+</html>

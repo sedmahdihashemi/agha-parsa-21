@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 400px;
+            background-color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2 id="para1" title="mahdi">wcl to js</h2>
+    <script>
+        let x = +prompt('num1')
+        x = (x+3)
+        alert(x)
+
+
+
+        //#######
+
+        let o = 5
+        let r = 8
+        console.log('o :' , o , 'r' , r);
+        let t = o
+        o = r
+        r = t
+        console.log('o :' , o , 'r' , r);
+
+//*******************
+
+        let atr = document.getElementById('para1').getAttribute('title')
+        console.log(atr);
+        document.getElementById('para1').setAttribute('class' , 'box')
+
+
+
+
+    </script>
+</body>
+</html>

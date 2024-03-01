@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="demo">Lorem ipsum dolor sit. +id</h1>
+    <p> Lorem, ipsum dolor.</p>
+    <ul>
+        <li>mahdi</li>
+        <li>mahdi</li>
+        <li>mahdi</li>
+        <li>mahdi</li>
+        <li>mahdi</li>
+        <li>mahdi</li>
+        <li>mahdi</li>
+    </ul>
+    <h2 class="mahdi">Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit.</p>
+    <h2 class="mahdi">Lorem, ipsum dolor.</h2>
+
+    <script>
+        let idSelect = document.getElementById('demo')
+        let x = idSelect.innerText
+        console.log('id demo before' + x);
+        idSelect.innerHTML = 'id text changed!'
+
+
+      
+      
+        // ###############################?
+
+
+
+        let _p = document.getElementsByTagName('p')
+        console.log(_p)
+        console.log('p before :' + _p[0].innerText);
+        _p[1].innerText = 'this is paragraph'
+
+        //###########
+
+
+        document.getElementsByClassName('mahdi')[1].innerHTML = '<h2>good man</h2>'
+
+        //#########
+
+
+        document.querySelector('ul>li:nth-of-type(3)').innerText = 'halo'
+
+        let _li = document.querySelectorAll('ul>li')
+        console.log(_li);
+        _li[1].style.color= 'blue'
+        _li[2].style.fontSize= '30px'
+
+    
+    
+        </script>
+</body>
+
+</html>

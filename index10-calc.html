@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="num1">
+    <button onclick="_op('+')">+</button>
+    <button onclick="_op('-')">-</button>
+    <button onclick="_op('*')">*</button>
+    <button onclick="_op('/')">/</button>
+    <input type="text" placeholder="num2">
+    <button onclick="_eq()">=</button>
+     <strong id="sum"></strong>
+
+
+     <script>
+
+        let inp1 = document.querySelector('input[placeholder= "num1"]')
+        let inp2 = document.querySelector('input[placeholder= "num2"]')
+        let gx 
+        function _op(x){
+            console.log(x);
+            gx = x
+
+
+        }
+
+        function _eq(){
+            let num1 = +inp1.value
+            let num2 = +inp2.value
+            if(gx == '+'){
+                num1+= num2
+
+            }else if(gx == '-') {
+                num1-=num2
+
+            }else if(gx == '*'){
+                num1*= num2
+
+            }else{
+                num1/=num2
+
+            }
+            document.getElementById('sum').innerHTML = num1
+
+
+
+        }
+     </script>
+
+</body>
+</html>
